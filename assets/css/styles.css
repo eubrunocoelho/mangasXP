@@ -1,0 +1,79 @@
+/**
+ * =================================================================================
+ * VARIABLES
+ * =================================================================================
+ */
+
+:root {
+    --background-color: #191919;
+    --black-primary-color: #141415;
+    --blue-primary-color: #0aabfb;
+}
+
+/**
+ * =================================================================================
+ * BASE
+ * =================================================================================
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+    text-rendering: optimizeLegibility !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004) !important;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/**
+ * =================================================================================
+ * HEADER
+ * =================================================================================
+ */
+
+header {
+    background: var(--black-primary-color);
+    border-bottom: 3px solid var(--blue-primary-color);
+    height: 83px;
+    padding: 0 6px 0 6px;
+    width: 100%;
+}
+
+.header__stick {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header__menu-button {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin: 0 12px 0 0;
+    width: 40px;
+}
+
+.menu-button__icon {
+    color: var(--blue-primary-color);
+    font-size: 28px;
+}
+
+.header__logo {
+    background: url(../img/logo.png);
+    background-size: cover;
+    height: 56px;
+    text-indent: -9999px;
+    width: 214px;
+}
