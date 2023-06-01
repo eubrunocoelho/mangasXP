@@ -12,9 +12,23 @@
     --input-background-secondary-color: #1a1b1c;
     --input-placeholder-color: #b5b5b5;
     --header-input-border-radius: 3px 9px 3px 9px;
+    --content-box-border-radius: 0 12px 4px 12px;
+    --content-box-title-border-radius: 0 0 4px 12px;
+    --footer-socials-border-radius: 2px 6px 2px 6px;
+    --font-pt-sans-narrow: 'PT Sans Narrow', sans-serif;
     --font-rajdhani: 'Rajdhani', sans-serif;
     --font-roboto-condensed: 'Roboto Condensed', sans-serif;
     --text-default-color: #fff;
+}
+
+/**
+ * =================================================================================
+ * MODIFIERS
+ * =================================================================================
+ */
+
+.mb--40 {
+    margin-bottom: 40px !important;
 }
 
 /**
@@ -184,6 +198,48 @@ body {
 
 /**
  * =================================================================================
+ * MAIN
+ * =================================================================================
+ */
+
+.main {
+    margin: 0 auto 110px !important;
+}
+
+/**
+ * =================================================================================
+ * CONTENT BOXER
+ * =================================================================================
+ */
+
+.content-box {
+    background: var(--black-secondary-color);
+    border-radius: var(--content-box-border-radius);
+    border-top: 6px solid var(--blue-primary-color);
+    padding: 56px 12px 20px 12px;
+    position: relative;
+}
+
+.content-box__title-box {
+    background: var(--blue-primary-color);
+    border-radius: var(--content-box-title-border-radius);
+    height: 44px;
+    left: 0;
+    line-height: 38px;
+    padding: 0 18px 0 18px;
+    position: absolute;
+    top: 0;
+}
+
+.content-box__title-text {
+    color: var(--text-default-color);
+    font-family: var(--font-pt-sans-narrow);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/**
+ * =================================================================================
  * FOOTER
  * =================================================================================
  */
@@ -191,7 +247,7 @@ body {
 .footer {
     background: var(--black-secondary-color);
     border-top: 4px solid var(--blue-primary-color);
-    display: flex; 
+    display: flex;
     height: 100%;
     margin-top: auto;
     width: 100%;
@@ -241,7 +297,7 @@ body {
 .socials__list-link {
     align-items: center;
     background: var(--black-primary-color);
-    border-radius: 2px 6px 2px 6px;
+    border-radius: var(--footer-socials-border-radius);
     color: var(--blue-primary-color);
     display: flex;
     font-size: 18px;
