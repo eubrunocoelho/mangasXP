@@ -7,6 +7,7 @@
 :root {
     --background-color: #191919;
     --black-primary-color: #141415;
+    --black-secondary-color: #1a1b1c;
     --blue-primary-color: #0aabfb;
     --input-background-secondary-color: #1a1b1c;
     --input-placeholder-color: #b5b5b5;
@@ -129,6 +130,11 @@ body {
     width: 240px;
 }
 
+.navigation__search-input:focus {
+    border: 2px solid var(--blue-primary-color);
+    padding: 0 calc(40px - 2px) 0 calc(12px - 2px);
+}
+
 .navigation__search-input::placeholder {
     color: var(--input-placeholder-color);
 }
@@ -174,6 +180,77 @@ body {
 .menu__list-link:hover {
     color: var(--blue-primary-color);
     text-decoration: underline;
+}
+
+/**
+ * =================================================================================
+ * FOOTER
+ * =================================================================================
+ */
+
+.footer {
+    background: var(--black-secondary-color);
+    border-top: 4px solid var(--blue-primary-color);
+    display: flex; 
+    height: 100%;
+    margin-top: auto;
+    width: 100%;
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+.footer__top {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.footer__logo {
+    background: url(../img/single-logo.png);
+    background-size: cover;
+    height: 58px;
+    margin: 0 20px 0 0;
+    text-indent: -9999px;
+    width: 58px;
+}
+
+.footer__division-line {
+    background: var(--black-primary-color);
+    display: block;
+    height: 58px;
+    margin: 0 20px 0 0;
+    width: 1px;
+}
+
+.footer__socials {
+    flex: 1;
+    width: 100%;
+}
+
+.socials__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.socials__list-link {
+    align-items: center;
+    background: var(--black-primary-color);
+    border-radius: 2px 6px 2px 6px;
+    color: var(--blue-primary-color);
+    display: flex;
+    font-size: 18px;
+    height: 34px;
+    justify-content: center;
+    text-decoration: none;
+    width: 34px;
+}
+
+.socials__list-link:hover {
+    color: var(--text-default-color);
 }
 
 /**
