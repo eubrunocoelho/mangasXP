@@ -199,6 +199,7 @@ body {
 
 .footer__wrapper {
     display: flex;
+    flex-direction: column;
 }
 
 .footer__top {
@@ -206,6 +207,7 @@ body {
     display: flex;
     height: 100%;
     padding: 20px 0 20px 0;
+    border-bottom: 1px solid var(--black-primary-color);
 }
 
 .footer__logo {
@@ -251,6 +253,28 @@ body {
 
 .socials__list-link:hover {
     color: var(--text-default-color);
+}
+
+.footer__copy {
+    padding: 12px 0 12px 0;
+}
+
+.copy__text {
+    color: var(--text-default-color);
+    font-family: var(--font-roboto-condensed);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    word-break: break-word;
+}
+
+.copy__link {
+    color: var(--blue-primary-color);
+    text-decoration: none;
+}
+
+.copy__link:hover {
+    text-decoration: underline;
 }
 
 /**
