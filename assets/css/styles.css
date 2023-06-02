@@ -474,6 +474,10 @@ body {
         height: 217px;
         width: 142px;
     }
+
+    .swiper-slide__chapter {
+        height: 36px;
+    }
 }
 
 @media screen and (min-width: 940px) {
