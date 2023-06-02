@@ -335,9 +335,12 @@ body {
     word-break: break-word;
 }
 
-.swiper-slide__title-link:hover {
+.swiper-slide__title-box:hover {
+    cursor: pointer;
+}
+
+.swiper-slide__title-box:hover:hover .swiper-slide__title-link {
     color: var(--blue-primary-color);
-    text-decoration: underline;
 }
 
 /**
