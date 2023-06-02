@@ -4,6 +4,9 @@ var swiper = new Swiper('.swiper', {
     breakpoints: {
         320: {
             spaceBetween: 14
+        },
+        768: {
+            spaceBetween: 16
         }
     }
 });

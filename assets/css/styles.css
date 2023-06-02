@@ -317,7 +317,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 10px 0 0 0;
-    padding: 14px 0 14px 0;
+    padding: 14px 10px 14px 10px;
     width: inherit;
 }
 
@@ -452,6 +452,26 @@ body {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .swiper-slide {
+        width: 146px;
+    }
+
+    .swiper-slide__cover-outside {
+        height: 221px;
+    }
+
+    .swiper-slide__cover {
+        height: 217px;
+        width: 142px;
+    }
+
+    .swiper-slide__img {
+        height: 217px;
+        width: 142px;
+    }
+}
+
 @media screen and (min-width: 940px) {
     .container {
         max-width: 1200px;
@@ -460,5 +480,11 @@ body {
 
     .navigation__menu {
         display: flex;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content-box {
+        padding: 56px 20px 20px 20px;
     }
 }
