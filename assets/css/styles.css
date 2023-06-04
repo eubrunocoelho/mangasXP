@@ -318,28 +318,21 @@ body {
     align-items: center;
     background: var(--black-primary-color);
     border-radius: var(--box-default-border-radius);
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 0 0;
-    padding: 14px 10px 14px 10px;
-    width: inherit;
-}
-
-.swiper-slide__title-link {
     color: var(--white-color);
+    display: flex;
     font-family: var(--font-pt-sans-narrow);
     font-size: 17px;
     font-weight: 700;
-    text-decoration: none;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    padding: 14px 10px 14px 10px;
     text-align: center;
+    text-decoration: none;
+    width: inherit;
     word-break: break-word;
 }
 
 .swiper-slide__title-box:hover {
-    cursor: pointer;
-}
-
-.swiper-slide__title-box:hover:hover .swiper-slide__title-link {
     color: var(--blue-primary-color);
 }
 
