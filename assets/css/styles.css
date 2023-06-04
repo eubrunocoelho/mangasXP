@@ -214,6 +214,12 @@ body {
     margin: 0 auto 110px !important;
 }
 
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
 /**
  * =================================================================================
  * CONTENT BOXER
@@ -271,7 +277,7 @@ body {
     display: flex;
     height: 193px;
     justify-content: center;
-    width: inherit;
+    width: 122px;
 }
 
 .swiper-slide__cover {
@@ -329,7 +335,7 @@ body {
     padding: 14px 10px 14px 10px;
     text-align: center;
     text-decoration: none;
-    width: inherit;
+    width: 122px;
     word-break: break-word;
 }
 
@@ -441,6 +447,7 @@ body {
     font-family: var(--font-roboto-condensed);
     font-size: 14px;
     font-weight: 400;
+    height: 16px;
 }
 
 .description__icon-box {
@@ -580,6 +587,7 @@ body {
 
     .swiper-slide__cover-outside {
         height: 221px;
+        width: 146px;
     }
 
     .swiper-slide__cover {
@@ -594,6 +602,54 @@ body {
 
     .swiper-slide__chapter {
         height: 36px;
+    }
+
+    .swiper-slide__title-box {
+        width: 146px;
+    }
+
+    .mangas-list__cover-outside {
+        height: 190px;
+        margin: 0 18px 0 0;
+        width: 125px;
+    }
+
+    .mangas-list__cover {
+        height: 186px;
+        width: 121px;
+    }
+
+    .mangas-list__img {
+        height: 186px;
+        width: 121px;
+    }
+
+    .mangas-list__summary {
+        padding: 12px 0 0 0;
+    }
+
+    .mangas-list__title {
+        font-size: 27px;
+    }
+    
+    .mangas-list__chapter-box {
+        font-size: 21px;
+        height: 40px;
+        padding: 0 13px 0 13px;
+    }
+
+    .mangas-list__description-item {
+        height: 18px;
+        font-size: 15px;
+    }
+
+    .description__icon-box {
+        height: 18px;
+        width: 18px;
+    }
+
+    .description__icon {
+        font-size: 14px;
     }
 }
 
