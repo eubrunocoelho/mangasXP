@@ -39,6 +39,10 @@
     margin-bottom: 40px !important;
 }
 
+.flex--1 {
+    flex: 0 !important;
+}
+
 /**
  * =================================================================================
  * BASE
@@ -218,6 +222,16 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
+}
+
+/**
+ * =================================================================================
+ * ASIDE
+ * =================================================================================
+ */
+
+.aside {
+    width: 100%;
 }
 
 /**
@@ -631,7 +645,7 @@ body {
     .mangas-list__title {
         font-size: 27px;
     }
-    
+
     .mangas-list__chapter-box {
         font-size: 21px;
         height: 40px;
@@ -665,6 +679,19 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+    .flex--1 {
+        flex: 1 !important;
+    }
+
+    .main-wrapper {
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    .aside {
+        width: 300px;
+    }
+
     .content-box {
         padding: 56px 20px 20px 20px;
     }
