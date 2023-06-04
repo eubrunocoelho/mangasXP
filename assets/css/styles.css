@@ -35,11 +35,19 @@
  * =================================================================================
  */
 
+.bb--none {
+    border-bottom: none !important;
+}
+
 .mb--40 {
     margin-bottom: 40px !important;
 }
 
-.flex--1 {
+.pt--0 {
+    padding-top: 0 !important;
+}
+
+.responsive--flex-1 {
     flex: 0 !important;
 }
 
@@ -68,6 +76,28 @@ body {
     flex-direction: column;
     font-family: var(--font-roboto-condensed);
     min-height: 100%;
+}
+
+/**
+ * =================================================================================
+ * COMPONENTS
+ * =================================================================================
+ */
+
+.button-ellipsis {
+    align-items: center;
+    background: url(../img/load-more-normal.png) no-repeat center var(--black-primary-color);
+    border: 2px solid var(--blue-primary-color);
+    border-radius: var(--box-default-border-radius);
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    text-indent: -9999px;
+    width: 100%;
+}
+
+.button-ellipsis:hover {
+    background: url(../img/load-more-hover.png) center no-repeat var(--blue-primary-color);
 }
 
 /**
@@ -366,10 +396,9 @@ body {
 .mangas-list__item {
     border-bottom: 1px solid var(--black-primary-color);
     display: flex;
-    padding: 0 0 20px 0;
+    padding: 20px 0 20px 0;
     width: 100%;
 }
-
 .mangas-list__cover-outside {
     align-items: center;
     background: var(--black-primary-color);
@@ -643,7 +672,7 @@ body {
     }
 
     .mangas-list__title {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .mangas-list__chapter-box {
@@ -679,7 +708,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-    .flex--1 {
+    .responsive--flex-1 {
         flex: 1 !important;
     }
 
