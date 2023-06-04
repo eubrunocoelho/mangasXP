@@ -96,13 +96,13 @@ body {
     width: 100%;
 }
 
+.button:hover {
+    background: var(--blue-primary-color);
+}
+
 .button__icon {
     font-size: 30px;
     color: var(--blue-primary-color);
-}
-
-.button:hover {
-    background: var(--blue-primary-color);
 }
 
 .button:hover .button__icon {
