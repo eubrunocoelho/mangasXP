@@ -84,20 +84,29 @@ body {
  * =================================================================================
  */
 
-.button-ellipsis {
+.button {
     align-items: center;
-    background: url(../img/load-more-normal.png) center no-repeat  var(--black-primary-color);
+    background: var(--black-primary-color);
     border: 2px solid var(--blue-primary-color);
     border-radius: var(--box-default-border-radius);
     display: flex;
     height: 36px;
     justify-content: center;
-    text-indent: -9999px;
+    text-decoration: none;
     width: 100%;
 }
 
-.button-ellipsis:hover {
-    background: url(../img/load-more-hover.png) center no-repeat var(--blue-primary-color);
+.button__icon {
+    font-size: 30px;
+    color: var(--blue-primary-color);
+}
+
+.button:hover {
+    background: var(--blue-primary-color);
+}
+
+.button:hover .button__icon {
+    color: var(--white-color);
 }
 
 /**
