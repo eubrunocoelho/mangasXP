@@ -665,11 +665,7 @@ body {
         width: 146px;
     }
 
-    .swiper-slide__cover {
-        height: 217px;
-        width: 142px;
-    }
-
+    .swiper-slide__cover,
     .swiper-slide__img {
         height: 217px;
         width: 142px;
@@ -689,11 +685,7 @@ body {
         width: 125px;
     }
 
-    .mangas-list__cover {
-        height: 186px;
-        width: 121px;
-    }
-
+    .mangas-list__cover,
     .mangas-list__img {
         height: 186px;
         width: 121px;
@@ -704,7 +696,7 @@ body {
     }
 
     .mangas-list__title {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .mangas-list__chapter-box {
@@ -724,7 +716,7 @@ body {
     }
 
     .description__icon {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
