@@ -35,16 +35,8 @@
  * =================================================================================
  */
 
-.bb--none {
-    border-bottom: none !important;
-}
-
 .mb--40 {
     margin-bottom: 40px !important;
-}
-
-.pt--0 {
-    padding-top: 0 !important;
 }
 
 .responsive--flex-1 {
@@ -135,7 +127,7 @@ body {
     width: 100%;
 }
 
-.header__wrapper {
+.header-wrapper {
     display: flex;
 }
 
@@ -402,12 +394,26 @@ body {
  * =================================================================================
  */
 
+.mangas-list__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .mangas-list__item {
     border-bottom: 1px solid var(--black-primary-color);
     display: flex;
     padding: 20px 0 20px 0;
     width: 100%;
 }
+
+.mangas-list__item:first-child {
+    padding: 0 0 20px 0;
+}
+
+.mangas-list__item:last-child {
+    border-bottom: none;
+}
+
 .mangas-list__cover-outside {
     align-items: center;
     background: var(--black-primary-color);
@@ -531,7 +537,7 @@ body {
     width: 100%;
 }
 
-.footer__wrapper {
+.footer-wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -622,7 +628,7 @@ body {
         padding: 0 10px 0 10px;
     }
 
-    .header__wrapper {
+    .header-wrapper {
         justify-content: space-between;
         padding: 0 10px 0 10px;
     }
