@@ -961,7 +961,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .content-box {
         padding: 56px 20px 20px 20px;
     }
