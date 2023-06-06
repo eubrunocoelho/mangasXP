@@ -98,8 +98,8 @@ body {
 }
 
 .button__icon {
-    font-size: 30px;
     color: var(--blue-primary-color);
+    font-size: 30px;
 }
 
 .button:hover .button__icon {
@@ -227,11 +227,11 @@ body {
 }
 
 .menu__list {
+    column-gap: 20px;
     display: flex;
     font-family: var(--font-rajdhani);
     font-size: 22px;
     font-weight: 500;
-    gap: 20px;
 }
 
 .menu__list-link {
@@ -490,26 +490,27 @@ body {
     font-family: var(--font-pt-sans-narrow);
     font-size: 19px;
     font-weight: 700;
-    justify-content: center;
     height: 36px;
+    justify-content: center;
     padding: 0 11px 0 11px;
     text-decoration: none;
 }
 
 .mangas-list__chapter-box:hover {
+    background: var(--white-color);
     color: var(--blue-primary-color);
 }
 
 .mangas-list__description {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    row-gap: 10px;
 }
 
 .mangas-list__description-item {
     align-items: center;
-    display: flex;
     color: var(--white-color);
+    display: flex;
     font-family: var(--font-roboto-condensed);
     font-size: 14px;
     font-weight: 400;
@@ -565,11 +566,11 @@ body {
 }
 
 .ranking__position {
+    color: var(--white-color);
     display: flex;
     font-family: var(--font-pt-sans-narrow);
     font-size: 19px;
     font-weight: 700;
-    color: var(--white-color);
     justify-content: center;
 }
 
@@ -861,6 +862,7 @@ body {
     .content-wrapper {
         flex-direction: row;
         column-gap: 30px;
+        row-gap: 0;
     }
 
     .aside {
@@ -937,7 +939,7 @@ body {
 
     .mangas-list__description-item {
         height: 18px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .description__icon-box {
