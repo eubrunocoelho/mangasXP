@@ -22,6 +22,7 @@
     --content-box-title-border-radius: 0 0 4px 12px;
     --header-input-border-radius: 3px 9px 3px 9px;
     --highlights-chapter-box-border-radius: 0 10px 2px 0;
+    --mini-box-default-border-radius: 2px 6px 2px 6px;
     --newly-added-chapter-box-border-radius: 0 0 2px 10px;
     --footer-socials-border-radius: 2px 6px 2px 6px;
 
@@ -37,12 +38,8 @@
  * =================================================================================
  */
 
-.text--blue {
-    color: var(--blue-primary-color) !important;
-}
-
-.text--white {
-    color: var(--white-color) !important;
+.box--active {
+    border: 2px solid var(--blue-primary-color) !important;
 }
 
 .mb--40 {
@@ -55,6 +52,14 @@
 
 .responsive--flex-1 {
     flex: 0 !important;
+}
+
+.text--blue {
+    color: var(--blue-primary-color) !important;
+}
+
+.text--white {
+    color: var(--white-color) !important;
 }
 
 /**
@@ -288,17 +293,6 @@ body {
 
 /**
  * =================================================================================
- * ASIDE
- * =================================================================================
- */
-
-.aside {
-    height: 100%;
-    width: 100%;
-}
-
-/**
- * =================================================================================
  * CONTENT BOX
  * =================================================================================
  */
@@ -336,6 +330,17 @@ body {
     font-family: var(--font-pt-sans-narrow);
     font-size: 22px;
     font-weight: 700;
+}
+
+/**
+ * =================================================================================
+ * ASIDE
+ * =================================================================================
+ */
+
+.aside {
+    height: 100%;
+    width: 100%;
 }
 
 /**
@@ -425,6 +430,43 @@ body {
 
 .swiper-slide__title-box:hover {
     color: var(--blue-primary-color);
+}
+
+/**
+ * =================================================================================
+ * LETTERS
+ * =================================================================================
+ */
+
+.letters__list {
+    column-gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.letters__list-link {
+    align-items: center;
+    background: var(--black-primary-color);
+    border-radius: var(--mini-box-default-border-radius);
+    color: var(--blue-primary-color);
+    display: flex;
+    font-family: var(--font-rajdhani);
+    font-size: 14px;
+    font-weight: 700;
+    height: 32px;
+    justify-content: center;
+    text-decoration: none;
+    width: 32px;
+}
+
+.letters__list-link:hover {
+    background: var(--white-color);
+}
+
+span.letters__list-link:hover {
+    background: var(--black-primary-color);
 }
 
 /**
@@ -903,7 +945,7 @@ body {
     .ranking-wrapper {
         grid-template-columns: 1fr;
     }
-    
+
     .ranking__item:nth-child(1) {
         padding: 0 0 20px 0;
     }
