@@ -14,6 +14,8 @@
     --gray-primary-color: #cecece;
     --gray-secondary-color: #b5b5b5;
     --gray-tertiary-color: #c6c6c6;
+    --green-color: #04d354;
+    --orange-color: #ff8c2a;
     --white-color: #fff;
 
     /* ===== BORDER RADIUS ===== */
@@ -60,6 +62,14 @@
 
 .text--blue {
     color: var(--blue-primary-color) !important;
+}
+
+.text--green {
+    color: var(--green-color) !important;
+}
+
+.text--orange {
+    color: var(--orange-color) !important;
 }
 
 .text--white {
@@ -558,13 +568,16 @@ span.letters__list-link:hover {
 }
 
 .mangas-list__chapters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     margin: 0 0 10px 0;
 }
 
-.mangas-list__chapter-box {
+.chapters__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chapters__list-link {
     align-items: center;
     background: var(--black-primary-color);
     border-radius: var(--newly-added-chapter-box-border-radius);
@@ -580,9 +593,39 @@ span.letters__list-link:hover {
     text-decoration: none;
 }
 
-.mangas-list__chapter-box:hover {
+.chapters__list-link:hover {
     background: var(--white-color);
     color: var(--blue-primary-color);
+}
+
+.mangas-list__status {
+    align-items: center;
+    background: var(--black-primary-color);
+    border-radius: var(--mini-box-default-border-radius);
+    color: var(--white-color);
+    display: flex;
+    font-family: var(--font-pt-sans-narrow);
+    font-size: 15px;
+    font-weight: 700;
+    height: 28px;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    padding: 0 13px 0 13px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.mangas-list__genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.mangas-list__genre-box {
+    background: var(--black-primary-color);
+    border-radius: var(--mini-box-default-border-radius);
+    height: 28px;
+    padding: 0 9px 0 9px;
 }
 
 .mangas-list__description {
@@ -1046,7 +1089,7 @@ span.letters__list-link:hover {
         font-size: 24px;
     }
 
-    .mangas-list__chapter-box {
+    .chapters__list-link {
         font-size: 20px;
         height: 38px;
         padding: 0 12px 0 12px;
