@@ -567,37 +567,6 @@ span.letters__list-link:hover {
     text-decoration: underline;
 }
 
-.mangas-list__chapters {
-    margin: 0 0 10px 0;
-}
-
-.chapters__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.chapters__list-link {
-    align-items: center;
-    background: var(--black-primary-color);
-    border-radius: var(--newly-added-chapter-box-border-radius);
-    border-top: 2px solid var(--blue-primary-color);
-    color: var(--white-color);
-    display: flex;
-    font-family: var(--font-pt-sans-narrow);
-    font-size: 19px;
-    font-weight: 700;
-    height: 36px;
-    justify-content: center;
-    padding: 0 11px 0 11px;
-    text-decoration: none;
-}
-
-.chapters__list-link:hover {
-    background: var(--white-color);
-    color: var(--blue-primary-color);
-}
-
 .mangas-list__status {
     align-items: center;
     background: var(--black-primary-color);
@@ -615,17 +584,65 @@ span.letters__list-link:hover {
     width: max-content;
 }
 
+.mangas-list__chapters {
+    margin: 0 0 10px 0;
+}
+
+.summary-chapters__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.summary-chapters__list-link {
+    align-items: center;
+    background: var(--black-primary-color);
+    border-radius: var(--newly-added-chapter-box-border-radius);
+    border-top: 2px solid var(--blue-primary-color);
+    color: var(--white-color);
+    display: flex;
+    font-family: var(--font-pt-sans-narrow);
+    font-size: 19px;
+    font-weight: 700;
+    height: 36px;
+    justify-content: center;
+    padding: 0 11px 0 11px;
+    text-decoration: none;
+}
+
+.summary-chapters__list-link:hover {
+    background: var(--white-color);
+    color: var(--blue-primary-color);
+}
+
 .mangas-list__genres {
+    margin: 0 0 20px 0;
+}
+
+.summary-genres__list {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-.mangas-list__genre-box {
+.summary-genres__list-link {
+    align-items: center;
     background: var(--black-primary-color);
     border-radius: var(--mini-box-default-border-radius);
+    color: var(--blue-primary-color);
+    font-family: var(--font-rajdhani);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
     height: 28px;
-    padding: 0 9px 0 9px;
+    justify-content: center;
+    padding: 0 7px 0 7px;
+    text-decoration: none;
+}
+
+.summary-genres__list-link:hover {
+    background: var(--white-color);
+    color: var(--blue-primary-color);
 }
 
 .mangas-list__description {
@@ -891,7 +908,7 @@ span.letters__list-link:hover {
  * MEDIA QUERIES (MOBILE FIRST)
  * =================================================================================
  */
-
+ 
 @media screen and (min-width: 435px) {
     .ranking__position-area {
         width: 38px;
@@ -907,6 +924,13 @@ span.letters__list-link:hover {
 
     .ranking__chapters {
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 458px) {
+    .summary-genres__list-link {
+        height: 32px;
+        padding: 0 9px 0 9px;
     }
 }
 
@@ -978,6 +1002,16 @@ span.letters__list-link:hover {
 }
 
 @media screen and (min-width: 592px) {
+    .summary-genres__list {
+        gap: 10px;
+    }
+
+    .summary-genres__list-link {
+        font-size: 15px;
+        height: 34px;
+        padding: 0 10px 0 10px;
+    }
+
     .ranking__position-area {
         width: 38px;
     }
@@ -1089,10 +1123,19 @@ span.letters__list-link:hover {
         font-size: 24px;
     }
 
-    .chapters__list-link {
+    .summary-chapters__list-link {
         font-size: 20px;
         height: 38px;
         padding: 0 12px 0 12px;
+    }
+
+    .summary-genres__list {
+        gap: 12px;
+    }
+
+    .summary-genres__list-link {
+        height: 36px;
+        padding: 0 11px 0 11px;
     }
 
     .mangas-list__description-item {
