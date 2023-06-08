@@ -121,6 +121,7 @@ a.button {
     font-weight: 700;
     height: 42px;
     justify-content: center;
+    margin: 20px 0 0 0;
     text-decoration: none;
     width: 100%;
 }
@@ -495,7 +496,7 @@ span.letters__list-link:hover {
  * =================================================================================
  */
 
-.mangas-list__wrapper {
+.mangas-list-wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -512,6 +513,7 @@ span.letters__list-link:hover {
 }
 
 .mangas-list__item:last-child {
+    padding: 20px 0 0 0;
     border-bottom: none;
 }
 
@@ -787,7 +789,6 @@ span.letters__list-link:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    padding: 0 0 20px 0;
 }
 
 .genres__list-link {
