@@ -897,13 +897,13 @@ span.pagination__list-link:hover {
  * =================================================================================
  */
 
-.genres__list {
+.aside-genres__list {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.genres__list-link {
+.aside-genres__list-link {
     align-items: center;
     background: var(--black-primary-color);
     border-radius: var(--mini-box-default-border-radius);
@@ -918,7 +918,7 @@ span.pagination__list-link:hover {
     text-decoration: none;
 }
 
-.genres__list-link:hover {
+.aside-genres__list-link:hover {
     background: var(--white-color);
 }
 
