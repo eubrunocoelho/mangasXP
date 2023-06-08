@@ -43,6 +43,7 @@
 
 .box--active {
     border: 2px solid var(--blue-primary-color) !important;
+    color: var(--blue-primary-color) !important;
 }
 
 .button--icon-height {
