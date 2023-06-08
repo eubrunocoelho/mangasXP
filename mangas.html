@@ -56,7 +56,7 @@
     </div>
     <main class="main container">
         <section class="content-box pt--18 mb--40">
-            <div class="letters-wrapper">
+            <nav class="letters-wrapper">
                 <ul class="letters__list">
                     <li class="letters__list-item">
                         <span class="letters__list-link box--active">*</span>
@@ -143,14 +143,14 @@
                         <a href="#" class="letters__list-link">Z</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </section>
         <div class="content-wrapper">
             <aside class="content-box aside">
                 <div class="content-box__title-box">
                     <h1 class="content-box__title-text">Gêneros</h1>
                 </div>
-                <div class="genres-wrapper">
+                <nav class="genres-wrapper">
                     <ul class="genres__list">
                         <li class="genres__list-item">
                             <a href="#" class="genres__list-link">4Koma</a>
@@ -201,292 +201,316 @@
                             <a href="#" class="genres__list-link">Gender Bender</a>
                         </li>                        
                     </ul>
-                </div>
+                </nav>
                 <a href="#" class="button">Mostrar mais</a>
             </aside>
-            <section class="content-box responsive--flex-1">
-                <div class="content-box__title-box">
-                    <h1 class="content-box__title-text">Lista de Mangás</h1>
-                </div>
-                <div class="mangas-list-wrapper">
-                    <!-- -->
-                    <div class="mangas-list__item">
-                        <div class="mangas-list__cover-outside">
-                            <div class="mangas-list__cover">
-                                <a href="#">
-                                    <img src="./assets/img/covers/bleach.png" class="mangas-list__img">
-                                </a>
+            <div class="content-column-wrapper">
+                <section class="content-box responsive--flex-1 mb--20">
+                    <div class="content-box__title-box">
+                        <h1 class="content-box__title-text">Lista de Mangás</h1>
+                    </div>
+                    <div class="mangas-list-wrapper">
+                        <!-- -->
+                        <div class="mangas-list__item">
+                            <div class="mangas-list__cover-outside">
+                                <div class="mangas-list__cover">
+                                    <a href="#">
+                                        <img src="./assets/img/covers/bleach.png" class="mangas-list__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mangas-list__summary">
+                                <a href="#" class="mangas-list__title">Bleach</a>
+                                <span class="mangas-list__status text--green">Completo</span>
+                                <div class="mangas-list__genres">
+                                    <ul class="summary-genres__list">
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ação</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Aventura</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Shounen</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Sobrenatural</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Super Poderes</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="mangas-list__summary">
-                            <a href="#" class="mangas-list__title">Bleach</a>
-                            <span class="mangas-list__status text--green">Completo</span>
-                            <div class="mangas-list__genres">
-                                <ul class="summary-genres__list">
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ação</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Aventura</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Shounen</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Sobrenatural</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Super Poderes</a>
-                                    </li>
-                                </ul>
+                        <!-- -->
+                        <div class="mangas-list__item">
+                            <div class="mangas-list__cover-outside">
+                                <div class="mangas-list__cover">
+                                    <a href="#">
+                                        <img src="./assets/img/covers/boruto-naruto-next-generations.png" class="mangas-list__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mangas-list__summary">
+                                <a href="#" class="mangas-list__title">Boruto: Naruto Next Generations</a>
+                                <span class="mangas-list__status text--orange">Em Publicação</span>
+                                <div class="mangas-list__genres">
+                                    <ul class="summary-genres__list">
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ação</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Artes Marciais</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Aventura</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Shounen</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Super Poderes</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -->
+                        <div class="mangas-list__item">
+                            <div class="mangas-list__cover-outside">
+                                <div class="mangas-list__cover">
+                                    <a href="#">
+                                        <img src="./assets/img/covers/fairy-tail.png" class="mangas-list__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mangas-list__summary">
+                                <a href="#" class="mangas-list__title">Fairy Tail</a>
+                                <span class="mangas-list__status text--green">Completo</span>
+                                <div class="mangas-list__genres">
+                                    <ul class="summary-genres__list">
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ação</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Aventura</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Comédia</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ecchi</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Fantasia</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Magia</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Shounen</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -->
+                        <div class="mangas-list__item">
+                            <div class="mangas-list__cover-outside">
+                                <div class="mangas-list__cover">
+                                    <a href="#">
+                                        <img src="./assets/img/covers/kimetsu-no-yaiba.png" class="mangas-list__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mangas-list__summary">
+                                <a href="#" class="mangas-list__title">Kimetsu No Yaiba</a>
+                                <span class="mangas-list__status text--green">Completo</span>
+                                <div class="mangas-list__genres">
+                                    <ul class="summary-genres__list">
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ação</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Demônios</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Histórico</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Shounen</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Sobrenatural</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -->
+                        <div class="mangas-list__item">
+                            <div class="mangas-list__cover-outside">
+                                <div class="mangas-list__cover">
+                                    <a href="#">
+                                        <img src="./assets/img/covers/bleach.png" class="mangas-list__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mangas-list__summary">
+                                <a href="#" class="mangas-list__title">Bleach</a>
+                                <span class="mangas-list__status text--green">Completo</span>
+                                <div class="mangas-list__genres">
+                                    <ul class="summary-genres__list">
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ação</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Aventura</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Shounen</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Sobrenatural</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Super Poderes</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -->
+                        <div class="mangas-list__item">
+                            <div class="mangas-list__cover-outside">
+                                <div class="mangas-list__cover">
+                                    <a href="#">
+                                        <img src="./assets/img/covers/boruto-naruto-next-generations.png" class="mangas-list__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mangas-list__summary">
+                                <a href="#" class="mangas-list__title">Boruto: Naruto Next Generations</a>
+                                <span class="mangas-list__status text--orange">Em Publicação</span>
+                                <div class="mangas-list__genres">
+                                    <ul class="summary-genres__list">
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ação</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Artes Marciais</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Aventura</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Shounen</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Super Poderes</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -->
+                        <div class="mangas-list__item">
+                            <div class="mangas-list__cover-outside">
+                                <div class="mangas-list__cover">
+                                    <a href="#">
+                                        <img src="./assets/img/covers/fairy-tail.png" class="mangas-list__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mangas-list__summary">
+                                <a href="#" class="mangas-list__title">Fairy Tail</a>
+                                <span class="mangas-list__status text--green">Completo</span>
+                                <div class="mangas-list__genres">
+                                    <ul class="summary-genres__list">
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ação</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Aventura</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Comédia</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ecchi</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Fantasia</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Magia</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Shounen</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -->
+                        <div class="mangas-list__item">
+                            <div class="mangas-list__cover-outside">
+                                <div class="mangas-list__cover">
+                                    <a href="#">
+                                        <img src="./assets/img/covers/kimetsu-no-yaiba.png" class="mangas-list__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mangas-list__summary">
+                                <a href="#" class="mangas-list__title">Kimetsu No Yaiba</a>
+                                <span class="mangas-list__status text--green">Completo</span>
+                                <div class="mangas-list__genres">
+                                    <ul class="summary-genres__list">
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Ação</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Demônios</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Histórico</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Shounen</a>
+                                        </li>
+                                        <li class="summary-genres__list-item">
+                                            <a href="#" class="summary-genres__list-link">Sobrenatural</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- -->
-                    <div class="mangas-list__item">
-                        <div class="mangas-list__cover-outside">
-                            <div class="mangas-list__cover">
-                                <a href="#">
-                                    <img src="./assets/img/covers/boruto-naruto-next-generations.png" class="mangas-list__img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mangas-list__summary">
-                            <a href="#" class="mangas-list__title">Boruto: Naruto Next Generations</a>
-                            <span class="mangas-list__status text--orange">Em Publicação</span>
-                            <div class="mangas-list__genres">
-                                <ul class="summary-genres__list">
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ação</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Artes Marciais</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Aventura</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Shounen</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Super Poderes</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <div class="mangas-list__item">
-                        <div class="mangas-list__cover-outside">
-                            <div class="mangas-list__cover">
-                                <a href="#">
-                                    <img src="./assets/img/covers/fairy-tail.png" class="mangas-list__img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mangas-list__summary">
-                            <a href="#" class="mangas-list__title">Fairy Tail</a>
-                            <span class="mangas-list__status text--green">Completo</span>
-                            <div class="mangas-list__genres">
-                                <ul class="summary-genres__list">
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ação</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Aventura</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Comédia</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ecchi</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Fantasia</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Magia</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Shounen</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <div class="mangas-list__item">
-                        <div class="mangas-list__cover-outside">
-                            <div class="mangas-list__cover">
-                                <a href="#">
-                                    <img src="./assets/img/covers/kimetsu-no-yaiba.png" class="mangas-list__img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mangas-list__summary">
-                            <a href="#" class="mangas-list__title">Kimetsu No Yaiba</a>
-                            <span class="mangas-list__status text--green">Completo</span>
-                            <div class="mangas-list__genres">
-                                <ul class="summary-genres__list">
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ação</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Demônios</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Histórico</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Shounen</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Sobrenatural</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <div class="mangas-list__item">
-                        <div class="mangas-list__cover-outside">
-                            <div class="mangas-list__cover">
-                                <a href="#">
-                                    <img src="./assets/img/covers/bleach.png" class="mangas-list__img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mangas-list__summary">
-                            <a href="#" class="mangas-list__title">Bleach</a>
-                            <span class="mangas-list__status text--green">Completo</span>
-                            <div class="mangas-list__genres">
-                                <ul class="summary-genres__list">
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ação</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Aventura</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Shounen</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Sobrenatural</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Super Poderes</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <div class="mangas-list__item">
-                        <div class="mangas-list__cover-outside">
-                            <div class="mangas-list__cover">
-                                <a href="#">
-                                    <img src="./assets/img/covers/boruto-naruto-next-generations.png" class="mangas-list__img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mangas-list__summary">
-                            <a href="#" class="mangas-list__title">Boruto: Naruto Next Generations</a>
-                            <span class="mangas-list__status text--orange">Em Publicação</span>
-                            <div class="mangas-list__genres">
-                                <ul class="summary-genres__list">
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ação</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Artes Marciais</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Aventura</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Shounen</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Super Poderes</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <div class="mangas-list__item">
-                        <div class="mangas-list__cover-outside">
-                            <div class="mangas-list__cover">
-                                <a href="#">
-                                    <img src="./assets/img/covers/fairy-tail.png" class="mangas-list__img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mangas-list__summary">
-                            <a href="#" class="mangas-list__title">Fairy Tail</a>
-                            <span class="mangas-list__status text--green">Completo</span>
-                            <div class="mangas-list__genres">
-                                <ul class="summary-genres__list">
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ação</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Aventura</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Comédia</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ecchi</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Fantasia</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Magia</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Shounen</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- -->
-                    <div class="mangas-list__item">
-                        <div class="mangas-list__cover-outside">
-                            <div class="mangas-list__cover">
-                                <a href="#">
-                                    <img src="./assets/img/covers/kimetsu-no-yaiba.png" class="mangas-list__img">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="mangas-list__summary">
-                            <a href="#" class="mangas-list__title">Kimetsu No Yaiba</a>
-                            <span class="mangas-list__status text--green">Completo</span>
-                            <div class="mangas-list__genres">
-                                <ul class="summary-genres__list">
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Ação</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Demônios</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Histórico</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Shounen</a>
-                                    </li>
-                                    <li class="summary-genres__list-item">
-                                        <a href="#" class="summary-genres__list-link">Sobrenatural</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
+                <nav class="pagination">
+                    <ul class="pagination__list">
+                        <li class="pagination__list-item">
+                            <span class="pagination__list-link">«</span>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#" class="pagination__list-link">1</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#" class="pagination__list-link">2</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <span class="pagination__list-link">...</span>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#" class="pagination__list-link">888</a>
+                        </li>
+                        <li class="pagination__list-item">
+                            <a href="#" class="pagination__list-link">»</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </main>
     <footer class="footer">

@@ -10,7 +10,8 @@
     --black-primary-color: #141415;
     --black-secondary-color: #1a1b1c;
     --blue-primary-color: #0aabfb;
-    --disabled-color: #38383e;
+    --disabled-primary-color: #38383e;
+    --disabled-secondary-color: #7d7d7d;
     --gray-primary-color: #cecece;
     --gray-secondary-color: #b5b5b5;
     --gray-tertiary-color: #c6c6c6;
@@ -46,6 +47,10 @@
 
 .button--icon-height {
     height: 36px !important;
+}
+
+.mb--20 {
+    margin-bottom: 20px !important;
 }
 
 .mb--40 {
@@ -285,7 +290,7 @@ a.button:hover .button__icon {
  */
 
 .breadcrumbs {
-    color: var(--disabled-color);
+    color: var(--disabled-primary-color-color);
     font-family: var(--font-roboto-condensed);
     font-size: 14px;
     font-weight: 400;
@@ -323,6 +328,11 @@ a.button:hover .button__icon {
     row-gap: 40px;
 }
 
+.content-column-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 .content-box {
     background: var(--black-secondary-color);
@@ -675,6 +685,54 @@ span.letters__list-link:hover {
 .description__icon {
     color: var(--blue-primary-color);
     font-size: 12px;
+}
+
+/**
+ * =================================================================================
+ * PAGINATION
+ * =================================================================================
+ */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination__list {
+    column-gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 14px;
+}
+
+.pagination__list-link {
+    align-items: center;
+    background: var(--black-primary-color);
+    border-radius: var(--box-default-border-radius);
+    color: var(--blue-primary-color);
+    display: flex;
+    font-family: var(--font-rajdhani);
+    font-size: 17px;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+}
+
+.pagination__list-link:hover {
+    background: var(--white-color);
+}
+
+span.pagination__list-link {
+    color: var(--disabled-secondary-color);
+}
+
+span.pagination__list-link:hover {
+    color: var(--disabled-secondary-color);
+    background: var(--black-primary-color);
 }
 
 /**
