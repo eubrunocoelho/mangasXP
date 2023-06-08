@@ -26,7 +26,7 @@
     --header-input-border-radius: 3px 9px 3px 9px;
     --highlights-chapter-box-border-radius: 0 10px 2px 0;
     --mini-box-default-border-radius: 2px 6px 2px 6px;
-    --newly-added-chapter-box-border-radius: 0 0 2px 10px;
+    --newly-added-chapter-box-border-radius: 0 0 7px 4px;
     --footer-socials-border-radius: 2px 6px 2px 6px;
 
     /* ===== FONTS ===== */
@@ -291,7 +291,7 @@ a.button:hover .button__icon {
  */
 
 .breadcrumbs {
-    color: var(--disabled-primary-color-color);
+    color: var(--disabled-primary-color);
     font-family: var(--font-roboto-condensed);
     font-size: 14px;
     font-weight: 400;
@@ -332,6 +332,7 @@ a.button:hover .button__icon {
 .content-column-wrapper {
     display: flex;
     flex-direction: column;
+    height: 100%;
     width: 100%;
 }
 
@@ -344,7 +345,7 @@ a.button:hover .button__icon {
     position: relative;
 }
 
-.content-box__title-box {
+.content-box__heading-box {
     align-items: center;
     background: var(--blue-primary-color);
     border-radius: var(--content-box-title-border-radius);
@@ -357,7 +358,7 @@ a.button:hover .button__icon {
     top: -6px;
 }
 
-.content-box__title-text {
+.content-box__heading {
     color: var(--white-color);
     font-family: var(--font-pt-sans-narrow);
     font-size: 22px;
@@ -597,10 +598,6 @@ span.letters__list-link:hover {
     width: max-content;
 }
 
-.mangas-list__chapters {
-    margin: 0 0 10px 0;
-}
-
 .summary-chapters__list {
     display: flex;
     flex-wrap: wrap;
@@ -626,10 +623,6 @@ span.letters__list-link:hover {
 .summary-chapters__list-link:hover {
     background: var(--white-color);
     color: var(--blue-primary-color);
-}
-
-.mangas-list__genres {
-    margin: 0 0 20px 0;
 }
 
 .summary-genres__list {
@@ -661,6 +654,7 @@ span.letters__list-link:hover {
 .mangas-list__description {
     display: flex;
     flex-direction: column;
+    margin: 12px 0 0 0;
     row-gap: 10px;
 }
 
@@ -871,6 +865,66 @@ span.pagination__list-link:hover {
 
 /**
  * =================================================================================
+ * FILTER
+ * =================================================================================
+ */
+
+.filter-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+} 
+
+.filter__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filter__heading {
+    align-items: center;
+    border-bottom: 1px solid var(--black-primary-color);
+    color: var(--white-color);
+    display: flex;
+    font-family: var(--font-pt-sans-narrow);
+    font-size: 23px;
+    font-weight: 700;
+    height: 34px;
+    text-transform: uppercase;
+}
+
+.filter__list {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0 0;
+}
+
+.filter__list-item {
+    align-items: center;
+    display: flex;
+    padding: 5px 0 5px 0;
+}
+
+.filter__list-link {
+    color: var(--gray-tertiary-color);
+    font-family: var(--font-pt-sans-narrow);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.filter__list-link:hover {
+    color: var(--blue-primary-color);
+    text-decoration: underline;
+}
+
+span.filter__list-link:hover {
+    color: var(--gray-tertiary-color);
+    text-decoration: none;
+}
+
+/**
+ * =================================================================================
  * FOOTER
  * =================================================================================
  */
@@ -1044,6 +1098,12 @@ span.pagination__list-link:hover {
     .ranking__chapters {
         font-size: 13px;
     }
+
+    .filter-wrapper {
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0;
+    }
 }
 
 @media screen and (min-width: 566px) {
@@ -1136,6 +1196,12 @@ span.pagination__list-link:hover {
     .ranking__item:nth-child(7) {
         border-bottom: 1px solid var(--black-primary-color);
         padding: 20px 0 20px 0;
+    }
+
+    .filter-wrapper {
+        column-gap: 0;
+        grid-template-columns: 1fr;
+        row-gap: 18px;
     }
 }
 
