@@ -510,6 +510,37 @@ span.letters__list-link:hover {
 
 /**
  * =================================================================================
+ * GENRES
+ * =================================================================================
+ */
+
+.genres__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.genres__list-link {
+    align-items: center;
+    background: var(--black-primary-color);
+    border-radius: var(--mini-box-default-border-radius);
+    color: var(--blue-primary-color);
+    display: flex;
+    font-family: var(--font-rajdhani);
+    font-size: 15px;
+    font-weight: 700;
+    height: 36px;
+    justify-content: center;
+    padding: 0 11px 0 11px;
+    text-decoration: none;
+}
+
+.genres__list-link:hover {
+    background: var(--white-color);
+}
+
+/**
+ * =================================================================================
  * MANGAS LIST
  * =================================================================================
  */
@@ -845,7 +876,7 @@ span.letters__list-link:hover {
 
 /**
  * =================================================================================
- * GENRES
+ * GENRES (ASIDE)
  * =================================================================================
  */
 
@@ -1286,6 +1317,16 @@ span.pagination__list-link:hover {
 
     .swiper-slide__title-box {
         width: 146px;
+    }
+
+    .genres__list {
+        gap: 14px;
+    }
+
+    .genres__list-link {
+        font-size: 17px;
+        height: 40px;
+        padding: 0 11px 0 11px;
     }
 
     .mangas-list__cover-outside {
