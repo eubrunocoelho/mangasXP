@@ -55,11 +55,30 @@
         <p class="breadcrumbs"><a href="#" class="breadcrumbs__link text--blue">Home</a> » <span class="text--white">Contato</span></p>
     </div>
     <main class="main container">
-        <section class="content-box">
+        <section class="content-box contact-container">
             <div class="content-box__heading-box">
                 <h1 class="content-box__heading">Contato</h1>
             </div>
             <div class="contact-wrapper">
+                <form class="contact__form">
+                    <div class="form__group">
+                        <label class="form__label">Nome:</label>
+                        <input type="text" class="form__input" placeholder="Nome Completo">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">E-mail:</label>
+                        <input type="text" class="form__input" placeholder="Endereço de E-mail">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Assunto:</label>
+                        <input type="text" class="form__input" placeholder="Assunto">
+                    </div>
+                    <div class="form__group mb--0">
+                        <label class="form__label">Mensagem:</label>
+                        <textarea  class="form__textarea" placeholder="Mensagem"></textarea>
+                    </div>
+                    <input type="submit" class="button" value="Enviar mensagem">
+                </form>
             </div>
         </section>
     </main>
