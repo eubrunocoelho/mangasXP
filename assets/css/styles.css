@@ -719,13 +719,13 @@ span.letters__list-link:hover {
     width: max-content;
 }
 
-.summary-chapters__list {
+.item-summary-chapters__list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.summary-chapters__list-link {
+.item-summary-chapters__list-link {
     align-items: center;
     background: var(--black-primary-color);
     border-radius: var(--newly-added-chapter-box-border-radius);
@@ -741,18 +741,18 @@ span.letters__list-link:hover {
     text-decoration: none;
 }
 
-.summary-chapters__list-link:hover {
+.item-summary-chapters__list-link:hover {
     background: var(--white-color);
     color: var(--blue-primary-color);
 }
 
-.summary-genres__list {
+.item-summary-genres__list {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-.summary-genres__list-link {
+.item-summary-genres__list-link {
     align-items: center;
     background: var(--black-primary-color);
     border-radius: var(--mini-box-default-border-radius);
@@ -767,7 +767,7 @@ span.letters__list-link:hover {
     text-decoration: none;
 }
 
-.summary-genres__list-link:hover {
+.item-summary-genres__list-link:hover {
     background: var(--white-color);
     color: var(--blue-primary-color);
 }
@@ -1216,7 +1216,7 @@ span.pagination__list-link:hover {
 }
 
 @media screen and (min-width: 458px) {
-    .summary-genres__list-link {
+    .item-summary-genres__list-link {
         height: 32px;
         padding: 0 9px 0 9px;
     }
@@ -1296,11 +1296,11 @@ span.pagination__list-link:hover {
 }
 
 @media screen and (min-width: 592px) {
-    .summary-genres__list {
+    .item-summary-genres__list {
         gap: 10px;
     }
 
-    .summary-genres__list-link {
+    .item-summary-genres__list-link {
         font-size: 15px;
         height: 34px;
         padding: 0 10px 0 10px;
@@ -1433,17 +1433,17 @@ span.pagination__list-link:hover {
         font-size: 24px;
     }
 
-    .summary-chapters__list-link {
+    .item-summary-chapters__list-link {
         font-size: 20px;
         height: 38px;
         padding: 0 12px 0 12px;
     }
 
-    .summary-genres__list {
+    .item-summary-genres__list {
         gap: 12px;
     }
 
-    .summary-genres__list-link {
+    .item-summary-genres__list-link {
         height: 36px;
         padding: 0 11px 0 11px;
     }
