@@ -483,6 +483,67 @@ body {
 
 /**
  * =================================================================================
+ * SINGLE MANGA
+ * =================================================================================
+ */
+
+.single-manga__summary {
+    display: grid;
+    grid-template-areas: 'cover' 'summary' 'synopsis';
+    width: 100%;
+}
+
+.single-manga__cover-box {
+    align-items: center;
+    display: flex;
+    grid-area: cover;
+    justify-content: center;
+}
+
+.single-manga__cover-outside {
+    align-items: center;
+    background: var(--black-primary-color);
+    border-radius: var(--box-default-border-radius);
+    display: flex;
+    height: 379px;
+    justify-content: center;
+    width: 250px;
+}
+
+.single-manga__cover {
+    background: var(--black-primary-color);
+    border-radius: var(--box-default-border-radius);
+    height: 373px;
+    width: 244px;
+}
+
+.single-manga__img {
+    border-radius: var(--box-default-border-radius);
+    height: 373px;
+    width: 244px;
+}
+
+.single-manga__summary {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: summary;
+}
+
+.single-manga__title {
+    color: var(--white-color);
+    font-family: var(--font-pt-sans-narrow);
+    font-size: 29px;
+    font-weight: 700;
+    padding: 16px 0 12px 0;
+}
+
+.single-manga__synopsis {
+    grid-area: synopsis;
+}
+
+/**
+ * =================================================================================
  * LETTERS
  * =================================================================================
  */
