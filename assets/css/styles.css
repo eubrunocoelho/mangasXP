@@ -743,54 +743,6 @@ span.letters__list-link:hover {
 
 /**
  * =================================================================================
- * PAGINATION
- * =================================================================================
- */
-
-.pagination {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.pagination__list {
-    column-gap: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 14px;
-}
-
-.pagination__list-link {
-    align-items: center;
-    background: var(--black-primary-color);
-    border-radius: var(--box-default-border-radius);
-    color: var(--blue-primary-color);
-    display: flex;
-    font-family: var(--font-rajdhani);
-    font-size: 17px;
-    font-weight: 700;
-    height: 40px;
-    justify-content: center;
-    text-decoration: none;
-    width: 40px;
-}
-
-.pagination__list-link:hover {
-    background: var(--white-color);
-}
-
-span.pagination__list-link {
-    color: var(--disabled-secondary-color);
-}
-
-span.pagination__list-link:hover {
-    color: var(--disabled-secondary-color);
-    background: var(--black-primary-color);
-}
-
-/**
- * =================================================================================
  * RANKING
  * =================================================================================
  */
@@ -984,6 +936,54 @@ span.filter__list-link:hover {
 
 /**
  * =================================================================================
+ * PAGINATION
+ * =================================================================================
+ */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination__list {
+    column-gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 14px;
+}
+
+.pagination__list-link {
+    align-items: center;
+    background: var(--black-primary-color);
+    border-radius: var(--box-default-border-radius);
+    color: var(--blue-primary-color);
+    display: flex;
+    font-family: var(--font-rajdhani);
+    font-size: 17px;
+    font-weight: 700;
+    height: 40px;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+}
+
+.pagination__list-link:hover {
+    background: var(--white-color);
+}
+
+span.pagination__list-link {
+    color: var(--disabled-secondary-color);
+}
+
+span.pagination__list-link:hover {
+    color: var(--disabled-secondary-color);
+    background: var(--black-primary-color);
+}
+
+/**
+ * =================================================================================
  * FOOTER
  * =================================================================================
  */
@@ -1159,7 +1159,7 @@ span.filter__list-link:hover {
     }
 
     .filter-wrapper {
-        column-gap: 16px;
+        column-gap: 19px;
         grid-template-columns: 1fr 1fr;
         row-gap: 0;
     }
