@@ -510,6 +510,8 @@ body {
     width: 250px;
 }
 
+/**/
+
 .single-manga__cover {
     background: var(--black-primary-color);
     border-radius: var(--box-default-border-radius);
