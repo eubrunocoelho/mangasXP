@@ -1643,17 +1643,43 @@ span.pagination__list-link:hover {
 @media screen and (min-width: 1200px) {
     .single-manga {
         grid-template-areas: 'cover summary' 'cover synopsis';
+        grid-template-columns: calc(249px + 22px) auto;
         grid-template-rows: auto 1fr;
+    }
+
+    .single-manga__cover-box {
+        width: 249px;
+    }
+
+    .single-manga__cover-outside {
+        height: 379px;
+        width: 249px;
+    }
+
+    .single-manga__cover {
+        height: 371px;
+        width: 241px;   
+    }
+
+    .single-manga__img {
+        height: 371px;
+        width: 241px;
+    }
+
+    .single-manga__summary {
+        padding: 18px 8px 0 0;
     }
     
     .single-manga__title {
         font-size: 35px;
+        margin: 0 0 14px 0;
     }
 
     .single-manga__status {
         font-size: 17px;
         height: 32px;
         padding: 0 13px 0 13px;
+        margin: 0 0 16px 0;
     }
 
     .manga-summary-genres__list {
@@ -1667,6 +1693,6 @@ span.pagination__list-link:hover {
 
     .single-manga__synopsis {
         margin: 16px 0 0 0;
-        padding: 0 6px 0 0;
+        padding: 0 8px 0 0;
     }
 }
