@@ -190,8 +190,6 @@ body {
 
 .side-navigation {
     background: var(--black-secondary-color);
-    display: flex;
-    flex-direction: column;
     height: 100vh;
     overflow: auto;
     position: absolute;
@@ -210,11 +208,11 @@ body {
 }
 
 .side-navigation__logo {
-    background: url(../img/logo.png);
+    background: url(../img/single-logo.png);
     background-size: cover;
-    height: 56px;
+    height: 58px;
     text-indent: -9999px;
-    width: 214px;
+    width: 58px;
 }
 
 .side-navigation__close-button {
@@ -232,13 +230,13 @@ body {
 }
 
 .side-navigation__menu {
-    padding: 20px 10px 0 10px;
+    padding: 20px 40px 0 10px;
+    margin: 0 0 20px 0;
 }
 
 .side-navigation-menu__list {
     display: flex;
     flex-direction: column;
-    margin: 0 0 20px 0;
 }
 
 .side-navigation-menu__list-item {
@@ -260,14 +258,54 @@ body {
 }
 
 .side-navigation__search-box {
-    display: flex;
-    padding: 0 10px 0 10px;
+    margin: 0 0 98px 0;
+    padding: 0 40px 0 10px;
 }
-
-/* working */
 
 .side-navigation__search-form {
     position: relative;
+}
+
+.side-navigation__search-input {
+    background: var(--black-primary-color);
+    border: none;
+    border-radius: var(--header-input-border-radius);
+    color: var(--white-color);
+    font-family: var(--font-roboto-condensed);
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    outline: none;
+    padding: 0 40px 0 12px;
+    width: 100%;
+}
+
+.side-navigation__search-input:focus {
+    border: 2px solid var(--blue-primary-color);
+    padding: 0 calc(40px - 2px) 0 calc(12px - 2px);
+}
+
+.side-navigation__search-input::placeholder {
+    color: var(--gray-secondary-color);
+}
+
+.side-navigation__search-button {
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+}
+
+.side-navigation__search-button .search-button__icon {
+    color: var(--blue-primary-color);
+    font-size: 21px;
 }
 
 /**
