@@ -6,6 +6,7 @@
 
 :root {
     /* ===== COLORS ===== */
+    --overlay-color: rgba(42, 42, 42, .5);
     --background-color: #191919;
     --black-primary-color: #141415;
     --black-secondary-color: #1a1b1c;
@@ -18,7 +19,6 @@
     --green-color: #04d354;
     --orange-color: #ff8c2a;
     --white-color: #fff;
-    --overlay-color: rgba(42, 42, 42, .5);
 
     /* ===== BORDER RADIUS ===== */
     --box-default-border-radius: 4px 12px 4px 12px;
@@ -192,9 +192,9 @@ body {
 .side-navigation {
     background: var(--black-secondary-color);
     height: 100vh;
+    left: -290px;
     overflow: auto;
     position: absolute;
-    left: -290px;
     width: 290px;
 }
 
@@ -232,8 +232,8 @@ body {
 }
 
 .side-navigation__menu {
-    padding: 20px 40px 0 10px;
     margin: 0 0 20px 0;
+    padding: 20px 40px 0 10px;
 }
 
 .side-navigation-menu__list {
@@ -508,8 +508,8 @@ body {
     background: var(--blue-primary-color);
     border-radius: var(--content-box-title-border-radius);
     display: flex;
-    justify-content: center;
     height: 44px;
+    justify-content: center;
     left: 0;
     padding: 0 18px 0 18px;
     position: absolute;
@@ -536,7 +536,7 @@ body {
 
 /**
  * =================================================================================
- * SINGLE MANGA (WRAPPER)
+ * SINGLE MANGA
  * =================================================================================
  */
 
@@ -613,8 +613,8 @@ body {
     font-family: var(--font-pt-sans-narrow);
     font-size: 15px;
     font-weight: 700;
-    justify-content: center;
     height: 28px;
+    justify-content: center;
     margin: 0 0 10px 0;
     padding: 0 13px 0 13px;
     text-transform: uppercase;
@@ -623,8 +623,8 @@ body {
 .manga-summary-genres__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 12px;
+    justify-content: center;
 }
 
 .manga-summary-genres__list-link {
@@ -711,8 +711,8 @@ body {
 
 .table__tr th,
 .table__tr td {
-    text-align: start;
     padding: 7px 12px 7px 12px;
+    text-align: start;
 }
 
 /**
@@ -1030,8 +1030,8 @@ span.letters__list-link:hover {
     font-weight: 400;
     height: 128px;
     outline: none;
-    resize: none;
     padding: 12px 14px 12px 14px;
+    resize: none;
     width: 100%;
 }
 
@@ -1067,8 +1067,8 @@ span.letters__list-link:hover {
 }
 
 .mangas-list__item:last-child {
-    padding: 20px 0 0 0;
     border-bottom: none;
+    padding: 20px 0 0 0;
 }
 
 .mangas-list__cover-outside {
@@ -1178,10 +1178,10 @@ span.letters__list-link:hover {
     background: var(--black-primary-color);
     border-radius: var(--mini-box-default-border-radius);
     color: var(--blue-primary-color);
+    display: flex;
     font-family: var(--font-rajdhani);
     font-size: 14px;
     font-weight: 700;
-    display: flex;
     height: 28px;
     justify-content: center;
     padding: 0 7px 0 7px;
@@ -1362,8 +1362,8 @@ span.letters__list-link:hover {
     font-family: var(--font-pt-sans-narrow);
     font-size: 21px;
     font-weight: 700;
-    text-decoration: none;
     margin: 0 0 6px 0;
+    text-decoration: none;
     word-break: break-word;
 }
 
@@ -1514,8 +1514,8 @@ span.pagination__list-link {
 }
 
 span.pagination__list-link:hover {
-    color: var(--disabled-secondary-color);
     background: var(--black-primary-color);
+    color: var(--disabled-secondary-color);
 }
 
 /**
@@ -1671,8 +1671,8 @@ span.pagination__list-link:hover {
 
 @media screen and (min-width: 500px) {
     .ranking-wrapper {
-        grid-template-columns: 1fr 1fr;
         column-gap: 19px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .ranking__item,
@@ -1857,8 +1857,8 @@ span.pagination__list-link:hover {
     }
 
     .content-wrapper {
-        flex-direction: row;
         column-gap: 30px;
+        flex-direction: row;
         row-gap: 0;
     }
 
@@ -1959,8 +1959,8 @@ span.pagination__list-link:hover {
     }
 
     .mangas-list__description-item {
-        height: 18px;
         font-size: 14px;
+        height: 18px;
     }
 
     .description__icon-box {
