@@ -96,7 +96,7 @@
 *,
 *::before,
 *::after {
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent !important;
     box-sizing: border-box !important;
     text-rendering: optimizeLegibility !important;
 }
