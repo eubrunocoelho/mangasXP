@@ -176,6 +176,7 @@ body {
 
 .window-overlay {
     background: var(--overlay-color);
+    display: none;
     height: 100%;
     position: fixed;
     width: 100%;
@@ -193,6 +194,7 @@ body {
     height: 100vh;
     overflow: auto;
     position: absolute;
+    left: -290px;
     width: 290px;
 }
 
@@ -208,11 +210,11 @@ body {
 }
 
 .side-navigation__logo {
-    background: url(../img/single-logo.png);
+    background: url(../img/logo.svg);
     background-size: cover;
-    height: 58px;
+    height: 56px;
     text-indent: -9999px;
-    width: 58px;
+    width: 214px;
 }
 
 .side-navigation__close-button {
@@ -348,7 +350,7 @@ body {
 }
 
 .header__logo {
-    background: url(../img/logo.png);
+    background: url(../img/logo.svg);
     background-size: cover;
     height: 56px;
     text-indent: -9999px;
@@ -1545,7 +1547,7 @@ span.pagination__list-link:hover {
 }
 
 .footer__logo {
-    background: url(../img/single-logo.png);
+    background: url(../img/single-logo.svg);
     background-size: cover;
     height: 58px;
     margin: 0 20px 0 0;
