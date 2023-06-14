@@ -36,7 +36,7 @@ let closeSideNavigation = () => {
 
 /**
  * =================================================================================
- * ASIDE GENRES (SHOW MORE)
+ * SHOW MORE (ASIDE GENRES)
  * =================================================================================
  */
 
@@ -45,7 +45,7 @@ const
     showMoreGenresBtn = document.querySelector('#showMoreGenres');
 
 if (genresItems && showMoreGenresBtn) {
-    let displayItems = 6;
+    let displayItems = 14;
 
     for (let i = 0; i < displayItems; i++) {
         genresItems[i].style.display = 'block';

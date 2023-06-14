@@ -15,10 +15,46 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap">
 </head>
 <body>
+    <div class="window-overlay">
+        <section class="side-navigation">
+            <div class="side-navigation__top">
+                <a href="./index.html" class="side-navigation__logo">mangasXP</a>
+                <div class="side-navigation__close-button" id="closeSideNavigation">
+                    <i class="fa-solid fa-xmark close-button__icon"></i>
+                </div>
+            </div>
+            <div class="side-navigation__navigation">
+                <nav class="side-navigation__menu">
+                    <ul class="side-navigation-menu__list">
+                        <li class="side-navigation-menu__list-item">
+                            <a href="./index.html" class="side-navigation-menu__list-link">Home</a>
+                        </li>
+                        <li class="side-navigation-menu__list-item">
+                            <a href="./mangas.html" class="side-navigation-menu__list-link">Mangás</a>
+                        </li>
+                        <li class="side-navigation-menu__list-item">
+                            <a href="./genres.html" class="side-navigation-menu__list-link">Gêneros</a>
+                        </li>
+                        <li class="side-navigation-menu__list-item">
+                            <a href="./contact.html" class="side-navigation-menu__list-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="side-navigation__search-box">
+                    <form action="./search-results.html" class="side-navigation__search-form">
+                        <input type="text" class="side-navigation__search-input" placeholder="Pesquisar...">
+                        <button type="submit" class="side-navigation__search-button">
+                            <i class="fa-solid fa-magnifying-glass search-button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
     <header class="header">
         <div class="header-wrapper container">
             <div class="header__stick">
-                <div class="header__menu-button">
+                <div class="header__menu-button" id="openSideNavigation">
                     <i class="fa-solid fa-bars menu-button__icon"></i>
                 </div>
                 <a href="./index.html" class="header__logo">mangasXP</a>
@@ -109,5 +145,6 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
