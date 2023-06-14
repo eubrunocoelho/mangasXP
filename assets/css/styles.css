@@ -196,6 +196,7 @@ body {
     left: -290px;
     overflow: auto;
     position: absolute;
+    transition: .5s;
     width: 290px;
 }
 
