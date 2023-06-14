@@ -1396,6 +1396,10 @@ span.letters__list-link:hover {
     gap: 12px;
 }
 
+.aside-genres__list-item {
+    display: none;
+}
+
 .aside-genres__list-link {
     align-items: center;
     background: var(--black-primary-color);
