@@ -18,6 +18,7 @@
     --gray-tertiary-color: #c6c6c6;
     --green-color: #04d354;
     --orange-color: #ff8c2a;
+    --red-color: #f16165;
     --white-color: #fff;
 
     /* ===== BORDER RADIUS ===== */
@@ -81,6 +82,10 @@
 
 .text--orange {
     color: var(--orange-color) !important;
+}
+
+.text--red {
+    color: var(--red-color) !important;
 }
 
 .text--white {
