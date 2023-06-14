@@ -232,6 +232,10 @@ body {
     font-size: 28px;
 }
 
+.side-navigation__navigation {
+    margin: 0 0 98px 0;
+}
+
 .side-navigation__menu {
     margin: 0 0 20px 0;
     padding: 20px 40px 0 10px;
@@ -261,7 +265,6 @@ body {
 }
 
 .side-navigation__search-box {
-    margin: 0 0 98px 0;
     padding: 0 40px 0 10px;
 }
 
